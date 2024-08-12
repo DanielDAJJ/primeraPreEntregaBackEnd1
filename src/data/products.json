@@ -88,5 +88,15 @@
 		"status": true,
 		"stock": 50,
 		"category": "Pan Dulce"
+	},
+	{
+		"id": 10,
+		"title": "Pan de Ajo",
+		"description": "Pan sabroso con un intenso sabor a ajo, ideal para acompañar sopas o ensaladas.",
+		"code": "PAN018",
+		"price": 2.6,
+		"status": true,
+		"stock": 35,
+		"category": "Pan Sabroso"
 	}
 ]

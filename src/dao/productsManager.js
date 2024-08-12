@@ -1,36 +1,3 @@
-/* import fs from 'fs';
-
-export class productsManager {
-    static path
-    static async get(){
-        if(fs.existsSync(this.path)){
-            return JSON.parse(await fs.promises.readFile(this.path, {encoding:"utf-8"}));
-        }else{
-            return [];
-        };
-    }
-    static async create({...product}){
-        if (!product.title || !product.description || !product.code || !product.price || !product.status || !product.stock || !product.category) {
-            throw new Error('hay campos sin completar');            
-        }
-        let products = await this.get();
-        let exists = products.find(p=>p.code === product.code);
-        if(exists){
-            throw new Error('El producto ya existe');
-        };
-        let id = 1;
-        if(products.length > 0){
-            id = products[products.length - 1].id + 1
-        };
-        let newProduct = {
-            id,
-            ...product
-        };
-        products.push(newProduct);
-        await fs.promises.writeFile(this.path, JSON.stringify(products, null, "\t"));
-        return products;
-    }
-} */
 import fs from 'fs';
 export class productsManager{
     static path
